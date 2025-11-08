@@ -72,5 +72,6 @@ const worker = new Worker(
 const events = new QueueEvents("grade-queue", { connection: { host: REDIS_HOST, port: REDIS_PORT } });
 events.on("completed", ({ jobId }) => console.log("✅ graded", jobId));
 events.on("failed", ({ jobId, failedReason }) => console.error("❌ failed", jobId, failedReason));
-
+console.log("Processing job:", job.id, job.data);
+  return { ok: true };
 console.log("👷 Worker up (concurrency=30)");
