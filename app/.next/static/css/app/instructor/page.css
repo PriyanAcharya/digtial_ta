@@ -1,0 +1,66 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/instructor/instructor.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+.instructor_wrap__XoIX3{
+  min-height:100vh;
+  padding-bottom:40px;
+  background: radial-gradient(1200px 600px at -10% -10%, #0d1526 0%, transparent 60%),
+              radial-gradient(1200px 600px at 110% -10%, #0c1a2a 0%, transparent 60%);
+}
+.instructor_topbar__LzRAn{position:-webkit-sticky;position:sticky;top:0;z-index:20;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;background:rgba(8,12,20,.75);-webkit-backdrop-filter:saturate(150%) blur(10px);backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--border)}
+.instructor_brand__Zcrti{font-weight:800}
+.instructor_toplinks__pN0ek{display:flex;gap:16px}
+.instructor_toplinks__pN0ek a{color:var(--muted);text-decoration:none}
+.instructor_toplinks__pN0ek a:hover{color:var(--text)}
+.instructor_header__v5HCj{max-width:1100px;margin:24px auto 14px;padding:0 20px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+.instructor_title__3WenS{font-size:36px;margin:0 0 4px}
+.instructor_subtitle__q4D89{margin:0;color:#b7c3d5}
+.instructor_actions__PmkWU{display:flex;gap:10px}
+.instructor_btn__FwVYZ{border:1px solid var(--border);background:transparent;color:var(--text);padding:10px 14px;border-radius:12px;cursor:pointer;transition:.2s}
+.instructor_btn__FwVYZ:hover{transform:translateY(-1px)}
+.instructor_small__sNNwi{padding:8px 10px;font-size:13px}
+.instructor_outline__jaToC{border-color:#2a3a4d}
+.instructor_primary__yNUpA{background:linear-gradient(90deg,var(--brand),var(--brand-strong));color:#0b1220;border:none;font-weight:600}
+.instructor_input__IuiKw{flex:1 1;min-width:260px;height:42px;border-radius:10px;border:1px solid #1f2a3c;background:#0b1220;color:#e5e7eb;padding:0 12px;outline:none}
+.instructor_card__EgU60{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.instructor_cardHeader__ED_Ug{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.instructor_cardTitle__dF5BX{margin:0;font-size:18px}
+.instructor_grid__4gGpg{max-width:1100px;margin:12px auto 0;padding:0 20px;display:grid;grid-template-columns:1.25fr .75fr;grid-gap:18px;gap:18px}
+.instructor_side__VEhWR{display:flex;flex-direction:column;gap:18px}
+.instructor_quickCreate__2Hhyp{max-width:1100px;margin:8px auto 0;padding:14px 18px;display:flex;gap:10px;align-items:center}
+.instructor_filters__1S4ez{display:flex;align-items:center;gap:8px}
+.instructor_select__EwpaP{height:36px;border-radius:8px;background:#0b1220;border:1px solid #1f2a3c;color:#d4e0f0;padding:0 10px}
+.instructor_stats__4RGmh{max-width:1100px;margin:8px auto 0;padding:0 20px;display:grid;grid-template-columns:repeat(4,1fr);grid-gap:12px;gap:12px}
+.instructor_stat__B67sx{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px}
+.instructor_statLabel__E4Ja6{color:#9cb0c9;font-size:13px}
+.instructor_statValue__s2u_d{font-weight:800;font-size:22px;margin-top:4px}
+.instructor_statBar__Ljgwp{height:8px;background:#0c1726;border:1px solid #1d2a3d;border-radius:999px;margin-top:10px;overflow:hidden}
+.instructor_statBar__Ljgwp>span{display:block;height:100%;background:linear-gradient(90deg,var(--brand),var(--brand-strong))}
+.instructor_warn__vAqq2.instructor_statBar__Ljgwp>span{background:linear-gradient(90deg,#f59e0b,#f59e0b)}
+.instructor_warn__vAqq2{color:#f59e0b}
+.instructor_tableWrap__SjMp4{overflow:auto;border-radius:12px;border:1px solid #1f2a3c}
+.instructor_table__mdpc6{width:100%;border-collapse:collapse}
+.instructor_table__mdpc6 th,.instructor_table__mdpc6 td{padding:12px 14px;border-bottom:1px solid #142033;text-align:left}
+.instructor_table__mdpc6 thead th{background:#0e1625;color:#cfe3ff;font-weight:600}
+.instructor_table__mdpc6 tbody tr:hover{background:#0b1220}
+.instructor_rowActions__2AWvX{display:flex;gap:8px}
+.instructor_queue__V9pd1{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.instructor_queue__V9pd1 li{display:grid;grid-template-columns:1fr 1fr auto;grid-gap:8px;gap:8px;padding:10px;border:1px solid #1f2a3c;background:#0b1220;border-radius:10px}
+.instructor_queue__V9pd1 li b{color:#cfe3ff}
+.instructor_queueActions__tlSTN{display:flex;gap:8px;margin-top:10px;justify-content:flex-end}
+.instructor_plagRow__CRu7g{display:grid;grid-template-columns:120px 1fr auto;grid-gap:12px;gap:12px;align-items:center;margin:8px 0}
+.instructor_plagScore__6_jtj{height:8px;border:1px solid #1d2a3c;background:#0c1726;border-radius:999px;overflow:hidden}
+.instructor_plagScore__6_jtj>span{display:block;height:100%;background:linear-gradient(90deg,var(--brand),var(--brand-strong))}
+.instructor_plagScore__6_jtj.instructor_warn__vAqq2>span{background:linear-gradient(90deg,#f59e0b,#f59e0b)}
+.instructor_plagMeta__iJGLR{min-width:0}
+.instructor_plagTitle__2KvvK{font-weight:600}
+.instructor_plagText__ko_vg{color:#9cb0c9;font-size:13px}
+.instructor_badgeOk__9l7Bw,.instructor_badgeWarn__Aq_ET,.instructor_badgeErr__uq3BU{display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:600}
+.instructor_badgeOk__9l7Bw{background:rgba(52,211,153,.15);color:#34d399;border:1px solid rgba(52,211,153,.35)}
+.instructor_badgeWarn__Aq_ET{background:rgba(250,204,21,.15);color:#facc15;border:1px solid rgba(250,204,21,.35)}
+.instructor_badgeErr__uq3BU{background:rgba(248,113,113,.15);color:#f87171;border:1px solid rgba(248,113,113,.35)}
+@media (max-width:980px){
+  .instructor_grid__4gGpg{grid-template-columns:1fr}
+  .instructor_stats__4RGmh{grid-template-columns:repeat(2,1fr)}
+}
+

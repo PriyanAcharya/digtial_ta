@@ -1,0 +1,98 @@
+/* Uses CSS variables defined in :root from app/home.css */
+.wrap{
+  padding-bottom: 40px;
+  background: radial-gradient(1200px 600px at -10% -10%, #0d1526 0%, transparent 60%) ,
+              radial-gradient(1200px 600px at 110% -10%, #0c1a2a 0%, transparent 60%);
+  min-height: 100vh;
+}
+.topbar{
+  position: sticky; top: 0;
+  z-index: 20;
+  height: 60px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 20px;
+  background: rgba(8,12,20,.75);
+  backdrop-filter: saturate(150%) blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.brand{ font-weight: 800; letter-spacing: .2px; }
+.toplinks{ display: flex; gap: 16px; }
+.toplinks a{ color: var(--muted); text-decoration: none; }
+.toplinks a:hover{ color: var(--text); }
+
+.header{
+  max-width: 1100px; margin: 24px auto 14px; padding: 0 20px;
+  display: flex; align-items: flex-end; justify-content: space-between; gap: 16px;
+}
+.title{ font-size: 36px; margin: 0 0 4px; }
+.subtitle{ margin: 0; color: #b7c3d5; }
+.badges{ display: flex; gap: 8px; }
+.pill, .pillAlt{
+  display: inline-block; padding: 6px 10px; font-size: 12px; border-radius: 999px;
+  border: 1px solid #203149; background: #0c1726; color: #b6c3d9;
+}
+.pillAlt{ border-color:#3b255e; background:#140f26; color:#cabffd; }
+
+.grid{
+  max-width: 1100px; margin: 6px auto 0; padding: 0 20px;
+  display: grid; grid-template-columns: 1.2fr .8fr; gap: 18px;
+}
+
+.card{
+  background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+  padding: 18px; box-shadow: var(--shadow);
+}
+.cardHeader{
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 10px;
+}
+.cardTitle{ margin: 0; font-size: 18px; }
+
+.actions{ display: flex; gap: 8px; flex-wrap: wrap; }
+.btn{
+  border: 1px solid var(--border); background: transparent; color: var(--text);
+  padding: 10px 14px; border-radius: 12px; cursor: pointer; transition: .2s;
+}
+.btn:hover{ transform: translateY(-1px); }
+.outline{ border-color: #2a3a4d; }
+.primary{ background: linear-gradient(90deg,var(--brand),var(--brand-strong)); color: #0b1220; border: none; font-weight: 600; }
+
+.editor{
+  width: 100%; min-height: 260px; border-radius: 12px;
+  background: #0b1220; color: #e5e7eb; border: 1px solid #1f2a3c;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  padding: 14px; outline: none; resize: vertical;
+}
+.hint{ color: #8ea2bb; font-size: 13px; margin-top: 8px; }
+
+.side{ display: flex; flex-direction: column; gap: 18px; }
+
+.output{
+  margin: 8px 0 0; padding: 12px; border-radius: 10px;
+  background: #0b1220; border: 1px solid #1f2a3c; color: #d3e2ff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  white-space: pre-wrap;
+}
+
+.list{ list-style: none; padding: 0; margin: 8px 0 0; color: #c6d3e3; }
+.list li{ display: grid; grid-template-columns: 120px 1fr; gap: 8px; padding: 6px 0; border-bottom: 1px dashed #1d2a3d; }
+.list li:last-child{ border-bottom: none; }
+.list li span{ color: #8ea2bb; }
+
+.fullrow{ grid-column: 1 / -1; }
+
+.tableWrap{ overflow: auto; border-radius: 12px; border: 1px solid #1f2a3c; }
+.table{ width: 100%; border-collapse: collapse; }
+.table th, .table td{ padding: 12px 14px; border-bottom: 1px solid #142033; text-align: left; }
+.table thead th{ background: #0e1625; color: #cfe3ff; font-weight: 600; }
+.table tbody tr:hover{ background: #0b1220; }
+
+.badgeOk, .badgeWarn, .badgeErr{
+  display: inline-block; padding: 4px 8px; border-radius: 999px; font-size: 12px; font-weight: 600;
+}
+.badgeOk{ background: rgba(52,211,153,.15); color: #34d399; border: 1px solid rgba(52,211,153,.35); }
+.badgeWarn{ background: rgba(250,204,21,.15); color: #facc15; border: 1px solid rgba(250,204,21,.35); }
+.badgeErr{ background: rgba(248,113,113,.15); color: #f87171; border: 1px solid rgba(248,113,113,.35); }
+
+@media (max-width: 980px){
+  .grid{ grid-template-columns: 1fr; }
+}

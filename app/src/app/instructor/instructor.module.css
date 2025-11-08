@@ -1,0 +1,62 @@
+.wrap{
+  min-height:100vh;
+  padding-bottom:40px;
+  background: radial-gradient(1200px 600px at -10% -10%, #0d1526 0%, transparent 60%),
+              radial-gradient(1200px 600px at 110% -10%, #0c1a2a 0%, transparent 60%);
+}
+.topbar{position:sticky;top:0;z-index:20;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;background:rgba(8,12,20,.75);backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--border)}
+.brand{font-weight:800}
+.toplinks{display:flex;gap:16px}
+.toplinks a{color:var(--muted);text-decoration:none}
+.toplinks a:hover{color:var(--text)}
+.header{max-width:1100px;margin:24px auto 14px;padding:0 20px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+.title{font-size:36px;margin:0 0 4px}
+.subtitle{margin:0;color:#b7c3d5}
+.actions{display:flex;gap:10px}
+.btn{border:1px solid var(--border);background:transparent;color:var(--text);padding:10px 14px;border-radius:12px;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-1px)}
+.small{padding:8px 10px;font-size:13px}
+.outline{border-color:#2a3a4d}
+.primary{background:linear-gradient(90deg,var(--brand),var(--brand-strong));color:#0b1220;border:none;font-weight:600}
+.input{flex:1;min-width:260px;height:42px;border-radius:10px;border:1px solid #1f2a3c;background:#0b1220;color:#e5e7eb;padding:0 12px;outline:none}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.cardHeader{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.cardTitle{margin:0;font-size:18px}
+.grid{max-width:1100px;margin:12px auto 0;padding:0 20px;display:grid;grid-template-columns:1.25fr .75fr;gap:18px}
+.side{display:flex;flex-direction:column;gap:18px}
+.quickCreate{max-width:1100px;margin:8px auto 0;padding:14px 18px;display:flex;gap:10px;align-items:center}
+.filters{display:flex;align-items:center;gap:8px}
+.select{height:36px;border-radius:8px;background:#0b1220;border:1px solid #1f2a3c;color:#d4e0f0;padding:0 10px}
+.stats{max-width:1100px;margin:8px auto 0;padding:0 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px}
+.statLabel{color:#9cb0c9;font-size:13px}
+.statValue{font-weight:800;font-size:22px;margin-top:4px}
+.statBar{height:8px;background:#0c1726;border:1px solid #1d2a3d;border-radius:999px;margin-top:10px;overflow:hidden}
+.statBar>span{display:block;height:100%;background:linear-gradient(90deg,var(--brand),var(--brand-strong))}
+.warn.statBar>span{background:linear-gradient(90deg,#f59e0b,#f59e0b)}
+.warn{color:#f59e0b}
+.tableWrap{overflow:auto;border-radius:12px;border:1px solid #1f2a3c}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:12px 14px;border-bottom:1px solid #142033;text-align:left}
+.table thead th{background:#0e1625;color:#cfe3ff;font-weight:600}
+.table tbody tr:hover{background:#0b1220}
+.rowActions{display:flex;gap:8px}
+.queue{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.queue li{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;padding:10px;border:1px solid #1f2a3c;background:#0b1220;border-radius:10px}
+.queue li b{color:#cfe3ff}
+.queueActions{display:flex;gap:8px;margin-top:10px;justify-content:flex-end}
+.plagRow{display:grid;grid-template-columns:120px 1fr auto;gap:12px;align-items:center;margin:8px 0}
+.plagScore{height:8px;border:1px solid #1d2a3c;background:#0c1726;border-radius:999px;overflow:hidden}
+.plagScore>span{display:block;height:100%;background:linear-gradient(90deg,var(--brand),var(--brand-strong))}
+.plagScore.warn>span{background:linear-gradient(90deg,#f59e0b,#f59e0b)}
+.plagMeta{min-width:0}
+.plagTitle{font-weight:600}
+.plagText{color:#9cb0c9;font-size:13px}
+.badgeOk,.badgeWarn,.badgeErr{display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:600}
+.badgeOk{background:rgba(52,211,153,.15);color:#34d399;border:1px solid rgba(52,211,153,.35)}
+.badgeWarn{background:rgba(250,204,21,.15);color:#facc15;border:1px solid rgba(250,204,21,.35)}
+.badgeErr{background:rgba(248,113,113,.15);color:#f87171;border:1px solid rgba(248,113,113,.35)}
+@media (max-width:980px){
+  .grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}

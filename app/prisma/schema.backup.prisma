@@ -1,0 +1,60 @@
+// prisma/schema.prisma
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL") // e.g. file:./dev.db
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id          Int          @id @default(autoincrement())
+  username    String       @unique
+  password    String
+  role        String       // "student" | "teacher"
+  createdAt   DateTime     @default(now())
+
+  submissions Submission[]
+}
+
+model Assignment {
+  id          Int           @id @default(autoincrement())
+  title       String
+  description String?
+  dueAt       DateTime?
+  createdAt   DateTime      @default(now())
+
+  submissions Submission[]
+}
+
+model Submission {
+  id           Int               @id @default(autoincrement())
+  assignmentId Int
+  studentId    Int               // FK → User.id
+  status       String            @default("RECEIVED")
+  createdAt    DateTime          @default(now())
+
+  // relations
+  assignment   Assignment        @relation(fields: [assignmentId], references: [id])
+  student      User              @relation(fields: [studentId], references: [id])
+
+  files        SubmissionFile[]  @relation("Submission_Files")
+
+  @@index([assignmentId])
+  @@index([studentId])
+}
+
+model SubmissionFile {
+  id            Int         @id @default(autoincrement())
+  submissionId  Int
+  name          String
+  sizeBytes     Int
+  storagePath   String
+  createdAt     DateTime    @default(now())
+
+  submission    Submission  @relation("Submission_Files", fields: [submissionId], references: [id])
+
+  @@index([submissionId])
+}
